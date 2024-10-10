@@ -114,12 +114,27 @@ button:hover{
 }
 /* Section home */
 section{
+  position: relative;
   min-height: 100vh;
   padding: 5rem 9% 5rem;
-  background-image: url('/Pro\ 1/assets/background.png');
+  overflow: hidden; 
+  display: flex;
+  z-index: 1;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/Pro 1/assets/background2.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  display: flex;
+  background-size: cover; 
+  filter: blur(8px); 
+  z-index: -1; 
 }
 
 .home{
@@ -145,7 +160,7 @@ section{
   color: var(--text-color);
 }
 h3 span{
-  color: var(--li-color);
+  color: var(--back-color);
 }
 
 .home .home-content h3{
@@ -255,7 +270,7 @@ h3 span{
 .container-activity .card{
   width: 300px;
   border-radius: 25px;
-  background: #2d324a;
+  background: #383c4e;
   box-shadow: 0 0 20px #0f111a;
   flex-direction: column;
 }
@@ -336,7 +351,7 @@ h3 span{
   transform: translateY(-50%);
   left: -10px;
   font-size: 50px !important;
-  color: #fff !important;
+  color: var(--text-color) !important;
   opacity: 1;
   z-index: 1;
 }
@@ -347,7 +362,7 @@ h3 span{
   transform: translateY(-50%);
   right: -10px;
   font-size: 50px !important;
-  color: #fff !important;
+  color: var(--text-color) !important;
   opacity: 1;
   z-index: 1;
 }
