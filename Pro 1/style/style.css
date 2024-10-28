@@ -23,6 +23,7 @@ body{
   height: 100vh;
   overflow-x: hidden;
   color: var(--li-color);
+  background-color: var(--back-color);
 }
 
 header{
@@ -110,7 +111,9 @@ button:hover{
 }
 
 .container{
-  background-color: var(--back-color);
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
 }
 /* Section home */
 section{
@@ -120,6 +123,8 @@ section{
   overflow: hidden; 
   display: flex;
   z-index: 1;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 section::before {
@@ -233,7 +238,6 @@ h3 span{
 
 /* Area of ​​activity */
 
-
 .activity-section{
   margin-top: 50px;
   margin-bottom: 50px;
@@ -265,6 +269,7 @@ h3 span{
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  min-height: 100vh;
 }
 
 .container-activity .card{
@@ -347,7 +352,7 @@ h3 span{
 
 .owl-nav .owl-prev{
   position: absolute;
-  top: calc(50% - 25px);
+  top: calc(50% - 150px);
   transform: translateY(-50%);
   left: -10px;
   font-size: 50px !important;
@@ -358,7 +363,7 @@ h3 span{
 
 .owl-nav .owl-next{
   position: absolute;
-  top: calc(50% - 25px);
+  top: calc(50% - 150px);
   transform: translateY(-50%);
   right: -10px;
   font-size: 50px !important;
@@ -372,40 +377,147 @@ h3 span{
 }
 
 .owl-dots .owl-dot span{
-  background: #f6ae31 !important;
+  background: var(--text-color) !important;
 }
 
 .owl-dots .owl-dot.active span{
   transform: scale(1.6);
   background: #fff !important;
-  border: 2px solid #f6ae31;
+  border: 2px solid var(--text-color);
 }
 
 
+/* Container about */
 
-/*  */
-
-
-.caroussel-article {
+.container-about{
   display: flex;
-  margin: 10px;
-  padding: 10px;
-
+  justify-content: center;
+  align-items: center;
+  margin-top: -17rem;
+  margin-bottom: 7rem;
+  gap: 2rem;
+  min-height: 100vh;
+}
+.img-about img{
+  width: 600px;
+}
+.heading{
+  text-align: center;
+}
+.content-about h1{
+  text-align: left;
+  line-height: 1.2;
+  font-size: 3rem;
+}
+.content-about h3{
+  font-size: 2.6rem;
+  padding-top: 20px;
+}
+.content-about p{
+  font-size: 1.2rem;
+  margin: 2rem 0 3rem;
+  text-align: justify;
 }
 
-.caroussel-article a img {
-  width: 250px;
-  margin-right: 20px;
-  justify-content: space-around;
+
+/* article */
+.cards-article{
+  display: grid;
+  overflow: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+}
+.outer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50rem;
+  overflow: hidden;
+
+}
+.content-text{
+  margin-right: 50rem;
+  padding-left: 5px;
+  margin-top: 20rem;
+  margin-bottom: -43rem;
+}
+.content-text h1{
+ padding-bottom: 2rem;
+ font-size: 3rem;
+}
+.content-text p{
+  text-align: justify;
+  line-height: 2;
+}
+.cards-article .card-article{
+  background: #fff;
+  padding: 1.5rem;
+  max-width: 30rem;
+  border-radius: .5rem;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  animation: animate 15s infinite linear;
+  animation-delay: calc(3s * var(--delay));
+}
+.header-article, .profile-article{
   align-items: center;
 }
-
-.img-sobre img {
-  width: 250px;
+.header-article{
+  justify-content: space-between;
+}
+.profile-article{
+  margin-bottom: 1rem;
+}
+.profile-article img{
+  border-radius: 5%;
+  padding: 5px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.178);
+}
+.profile-article .details-article{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.details-article h4 p{
+  color: #0f111a;
+}
+.testimonial-article{
+  margin-top: 10px;
+  text-align: justify;
+  margin-left: 10px;
 }
 
-.content-sobre {
-  display: flex;
-  padding: 20px;
-  justify-content: center;
+.cards-article .card-article:last-child{
+  animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate{
+  0%{
+    opacity: 0;
+    transform: translateY(50%) scale(0.5);
+
+  }
+  5%,20%{
+    opacity: 0;
+    transform: translateY(50%) scale(0.7);
+
+  }
+  25%,40%{
+    opacity: 1;
+    transform: translateY(0%) scale(1);
+    
+  }
+  45%,60%{
+    opacity: 0;
+    transform: translateY(-50%) scale(0.7);
+
+  }
+  65%,100%{
+    opacity: 0;
+    transform: translateY(-50%) scale(0.5);
+
+  }
 }
