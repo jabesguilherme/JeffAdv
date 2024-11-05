@@ -161,7 +161,7 @@
     
 
     <!--Container about-->
-    <div class="container-about">
+    <section class="container-about">
         <div class="img-about">
             <img src="/Pro 1/assets/about.png" alt="">  
         </div>
@@ -180,7 +180,7 @@
             </div>
         </div>
         
-    </div>
+    </section>
 
     <!-- Container Article -->
     <div class="content-text">
@@ -272,7 +272,7 @@
         
     
     <!-- FAQ -->    
-     <div class="section-faq">
+     <section class="section-faq">
         <div class="container-faq">
             <h1 class="title-faq">Dúvidas recentes</h1>
             <div class="contentfaq-item" id="question1">
@@ -341,17 +341,28 @@
                 </div>
             </div>
         </div>
-     </div>
+     </section>
     
 
     <!-- form -->
-    <div class="containerform">
+    <form class="containerform">
         <div class="content-form">
             <h1>Entrar em contato</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore vero distinctio</p>
         </div>
-
-    </div>
+        <form action="" 
+        method="POST" 
+        data-form
+         />
+            <label for="name">Nome</label>
+            <input type="text" name="name" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" required>
+            <label for="mensage">Assunto</label>
+            <textarea name="mensage" id="mensage"></textarea>
+            <button class="button-contact" data-button type="submit" disable>Enviar</button>
+        </form>
+    </section>
 </div>
 
 <!--jQuery CDN-->
