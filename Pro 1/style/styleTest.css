@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+:root {
+  --li-color: #edf0f1;
+  --text-color: rgb(255, 196, 4);
+  --main-color: black;
+  --back-color: #24252A;
+  --button-color:rgb(172, 172, 172);
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  color: var(--li-color);
+}
+
+a{
+    text-decoration: none;
+    color: #eee;
+}
+
+header{
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    margin-right: 40px;
+}
+
+.carouselTest{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -50px;
+    position: relative;
+}
+
+.carouselTest .listTest .itemTest{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.carouselTest .listTest .itemTest img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carouselTest .listTest .itemTest .contentHeader{
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.carouselTest .listTest .itemTest .contentHeader .titleTest{
+    font-weight: bold;
+    font-size: 5em;
+    line-height: 1.3em;
+}
+
+.carouselTest .listTest .itemTest .contentHeader .buttonTest{
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}

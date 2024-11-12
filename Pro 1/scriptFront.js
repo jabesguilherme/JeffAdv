@@ -22,7 +22,7 @@ $(document).ready(function(){
                 item:1
             },
             600:{
-                item:1
+                item:2
             },
             1000:{
                 item:3
@@ -30,6 +30,17 @@ $(document).ready(function(){
         }
     })
 });
+
+/* Faq */
+
+const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach(accordion =>{
+    accordion.addEventListener('click', () => {
+        const body = accordion.querySelector('.accordion-body');
+        body.classList.toggle('active');
+    })
+})
 
 
 
