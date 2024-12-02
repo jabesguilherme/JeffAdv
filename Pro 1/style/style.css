@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
   outline: none;
@@ -12,7 +12,7 @@
 
 :root {
   --li-color: #edf0f1;
-  --text-color: rgb(255, 196, 4);
+  --text-color: rgb(204, 169, 112);
   --main-color: black;
   --back-color: #24252A;
   --button-color:rgb(172, 172, 172);
@@ -23,16 +23,24 @@ body{
   height: 100vh;
   overflow-x: hidden;
   color: var(--li-color);
-  background-color: var(--back-color);
+  background-color: #2D3F57;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header{
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: space-between;
   padding: 10px 10%;
+  width: 100%;
   color: white;
-  background-color: #1e2029;
+  background-color: #24252a80;
+
 }
 li, a, button{
   font-family: "Montserrat", sans-serif;
@@ -109,10 +117,7 @@ li, a, button{
     }
   }  
 
-  .container{
-    margin: 0 auto;
-    padding: 20px;
-  }
+ 
 /* Section home */
 
 .home{
@@ -121,7 +126,7 @@ li, a, button{
   align-items: center;
   flex-direction: column;
   gap: 8rem;
-  margin-top: -20px;
+  margin-top: 5%;
   padding: 5rem 9% 5rem;
   overflow: hidden; 
   display: flex;
@@ -138,42 +143,41 @@ li, a, button{
   right: 0;
   bottom: 0;
   background-image: url('/Pro 1/assets/backnew.png');
+  filter: blur(2px);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; 
-  filter: blur(3px); 
   z-index: -1; 
 }
 
 .home .home-content {
   text-align: left;
   margin-bottom: 10rem;
-  margin-right: 30rem;
+  margin-right: 20rem;
 }
 
 .home .home-content h1{
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.3;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.1;
   margin-bottom: 2rem;
-  text-transform: uppercase;
   text-align: start;
   color: var(--text-color);
 }
 h3 span{
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   color: var(--li-color);
 }
 
 .home .home-content h3{
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 1rem;
 }
 
 .home-content p{
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
   color: var(--li-color);
 }
@@ -236,133 +240,7 @@ h3 span{
 /* Area of ​​activity */
 
 
-.wrapper{
-  width: 90%;
-  margin: auto;
-  margin-top: -10%;
-}
-.container-activity{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-  }
 
-.container-activity .card{
-  width: 300px;
-  border-radius: 25px;
-  background-color: var(--back-color);
-  box-shadow: 0 0 20px #0f111a;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.container-activity .card .img-activity{
-  padding: 25px;
-  padding-bottom: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-.img-activity img {
-  width: 80%; 
-  height: auto;
-  border-radius: 20px;
-  border: 2px solid var(--text-color);
-}
-
-.card .info{
-  border-top: 2px solid var(--text-color);
-  position: relative;
-  padding: 20px;
-}
-
-.card .info .name-area{
-  position: absolute;
-  left: 50%;
-  top: -32px;
-  transform: translateX(-50%);
-  padding: 20px;
-  font-size: 20px;
-  border-radius: 50px;
-  background: var(--text-color);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  white-space: nowrap;
-  box-shadow: 0px 10px 20px -10px var(--text-color);
-}
-
-.card .info .post-area{
-  margin-top: 55px;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  color: var(--li-color);
-  font-family: 'Montserrat', sans-serif;
-}
-
-.card .info .about-area{
-  padding: 25px;
-  padding-top: 8px;
-  text-align: center;
-  font-size: 16px;
-  color: var(--li-color);
-  font-family: 'Montserrat', sans-serif;
-}
-
-.btn-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.owl-carousel .owl-stage{
-  display: flex;
-  justify-content: center;
-}
-
-.owl-carousel .owl-item{
-  display: flex;
-  justify-content: center;
-}
-
-
-.owl-nav .owl-prev{
-  position: absolute;
-  top: calc(50% - 150px);
-  transform: translateY(-50%);
-  left: -10px;
-  font-size: 50px !important;
-  color: var(--text-color) !important;
-  opacity: 1;
-  z-index: 1;
-}
-
-.owl-nav .owl-next{
-  position: absolute;
-  top: calc(50% - 150px);
-  transform: translateY(-50%);
-  right: -10px;
-  font-size: 50px !important;
-  color: var(--text-color) !important;
-  opacity: 1;
-  z-index: 1;
-}
-
-.owl-dots{
-  margin-top: 30px;
-}
-
-.owl-dots .owl-dot span{
-  background: var(--text-color) !important;
-}
-
-.owl-dots .owl-dot.active span{
-  transform: scale(1.6);
-  background: #fff !important;
-  border: 2px solid var(--text-color);
-}
 
 
 /* Container about */
@@ -373,9 +251,8 @@ h3 span{
   align-items: center;
   margin-bottom: 7rem;
   gap: 2rem;
+  min-width: 100%;
   min-height: 100vh;
-  background-color: #283042;
-  box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
 }
 .img-about img{
   width: 600px;
@@ -417,6 +294,7 @@ h3 span{
   color: var(--text-color);
 }
 .title-article h2{
+  margin: 15rem;
   font-weight: 300;
   line-height: 1.3;
   text-transform: uppercase;
@@ -567,6 +445,9 @@ h3 span{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 #container-faq h1{
   text-align: center;
@@ -722,4 +603,22 @@ textarea{
 
 .error{
   color: tomato;
+}
+
+.faq-contact{
+  display: flex;
+  background-color: #283042;
+  justify-content: space-around; 
+  gap: 20px;
+  padding: 20px;
+}
+
+/* button whats */
+
+.whats{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
 }
