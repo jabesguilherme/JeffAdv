@@ -3,7 +3,18 @@
 document.getElementById('menu-btn').addEventListener('click', function(){
     const nav = document.querySelector('nav');
     nav.classList.toggle('active');
-})
+});
+
+let nav = document.getElementById('nav');
+            document.body.onscroll = () => { 
+                if (window.pageYOffset > 100) {
+ 
+                    nav.style.background = "#24252a80";
+ 
+                } else {
+                    nav.style.background = "transparent";
+                }
+            }
 
 /* -- Container activity area carousel -- */
 
@@ -41,6 +52,5 @@ accordions.forEach(accordion =>{
         body.classList.toggle('active');
     })
 })
-
 
 
