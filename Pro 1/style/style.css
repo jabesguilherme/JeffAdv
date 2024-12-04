@@ -9,6 +9,10 @@
   list-style: none;
   outline: none;
 }
+/* extension */
+html.sr .card-article .accordion {
+  visibility: hidden;
+}
 
 :root {
   --li-color: #edf0f1;
@@ -125,7 +129,7 @@ li, a, button{
   align-items: center;
   flex-direction: column;
   gap: 8rem;
-  margin-top: 5%;
+  margin-top: 3%;
   padding: 5rem 9% 5rem;
   overflow: hidden; 
   z-index: 1;
@@ -140,7 +144,7 @@ li, a, button{
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/Pro 1/assets/backnew.png');
+  background-image: url('/Pro 1/assets/test/backnewt.png');
   filter: blur(2px);
   background-repeat: no-repeat;
   background-position: center;

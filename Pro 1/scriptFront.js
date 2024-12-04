@@ -54,3 +54,11 @@ accordions.forEach(accordion =>{
 })
 
 
+/* ScrollReveal */
+ScrollReveal().reveal('.container-about');
+ScrollReveal().reveal('.title-article', {delay: 700})
+ScrollReveal().reveal('.card-container-article', {delay: 500})
+ScrollReveal().reveal('.box-faq', {delay: 500})
+ScrollReveal().reveal('.form-wrapper', {delay: 500})
+ScrollReveal().reveal('.card-article', { interval: 300 });
+ScrollReveal().reveal('.accordion', { interval: 300 });
