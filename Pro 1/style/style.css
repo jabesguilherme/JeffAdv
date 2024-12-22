@@ -24,14 +24,13 @@ html.sr .card-article .accordion {
 
 body{
   color: var(--li-color);
-  background-color: #2D3F57;
+  background-color: #edf0f1;
 }
 
 .container{
-  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0 0;
 }
 
 header{
@@ -42,21 +41,29 @@ header{
   padding: 10px 10%;
   width: 100%;
   color: white;
-  background-color: #24252a80;
+  background-color: #24252ae3;
+  z-index: 1;
 
 }
-li, a, button{
+li, a{
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  color: #edf0f1;
+  font-size: 12px;
+  color: var(--text-color);
   text-decoration: none;
 }
 
-.logo{
+.menu-btn{
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--text-color);
+  font-weight: 500;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.logo img{
   cursor: pointer;
-  text-transform: uppercase;
-  color: var(--text-color);
 }
 
 .nav_links li{
@@ -129,8 +136,8 @@ li, a, button{
   align-items: center;
   flex-direction: column;
   gap: 8rem;
-  margin-top: 3%;
-  padding: 5rem 9% 5rem;
+  padding-top: 12%;
+  padding-left: 9%;
   overflow: hidden; 
   z-index: 1;
   border-bottom-right-radius: 20px;
@@ -155,11 +162,11 @@ li, a, button{
 .home .home-content {
   text-align: left;
   margin-bottom: 10rem;
-  margin-right: 20rem;
+  margin-right: 35rem;
 }
 
 .home .home-content h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 2rem;
@@ -239,9 +246,111 @@ h3 span{
   }
 }
 
-/* Area of ​​activity */
+/* Container contact home */
+
+.form-home-container{
+  background-color: #24252ad3;
+  border-radius: 8px; 
+  margin-top: -45rem;
+  margin-bottom: 10px;
+  margin-left: 30rem;
+  max-width: 370px;
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.363);
+}
 
 
+.form-text{
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 13px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+
+}
+
+.icon-form{
+  background-color: #4ba03167;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px 10px 10px;
+}
+
+.icon-form img{
+  width: 30px;
+  height: auto;
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.text-content{
+  padding-left: 15px;
+}
+
+.text-content h2 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.text-content h3 {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+  font-weight: normal;
+}
+
+.form-home{
+  width: 100%;
+  max-width: 30rem;
+  padding: 1rem;
+  border-radius: 8px;
+  
+}
+
+.form-home label,
+input,
+textarea{
+  display: block;
+  width: 100%;
+  height: 20px;
+  border-radius: 8px;
+}
+
+.form-home input,
+textarea,
+.button-contact{
+  font: inherit;
+  padding: 1rem;
+  font-weight: 400;
+  
+}
+
+.form-home input,
+textarea{
+  margin-bottom: 10px;
+  background: #ffffffad;
+  border: 0.125rem solid transparent;
+  border-radius: 8px;
+  box-shadow: 0.3s;
+}
+
+.form-home label{
+  margin-bottom: 0.5rem;
+  margin-top: -5px;
+  color: var(--text-color);
+}
+
+.form-home textarea{
+  min-height: 5.5rem;
+  resize: vertical;
+  background: #ffffffad;
+}
+.button-home-contact{
+  width: 100%;
+  border-radius: 8px;
+}
 
 
 
@@ -251,9 +360,9 @@ h3 span{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 7rem;
   gap: 2rem;
-  margin-top: -10rem;
+  background-image: url('/Pro 1/assets/fundovalores.png');
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 .img-about img{
   width: 500px;
@@ -272,6 +381,7 @@ h3 span{
   text-align: left;
   line-height: 1.2;
   font-size: 2.5rem;
+  color: var(--text-color);
 }
 .content-about h3{
   font-size: 2rem;
@@ -282,6 +392,68 @@ h3 span{
   font-size: 1rem;
   margin: 2rem 0 3rem;
   text-align: justify;
+  color: var(--back-color);
+
+}
+
+
+/* Area of ​valor */
+
+.valores-section {
+  background-color: #dbdbdb8f;
+  padding: 2px 1em 40px 1em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.valores-section h2 {
+  font-size: 2.5em;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  
+}
+
+.container {
+  max-width: 1768px;
+}
+
+.valores{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.valor {
+  background-color: #0f111ae1;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(41, 39, 39, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.valor:hover {
+  transform: scale(1.05);
+}
+
+.valor img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.valor h3 {
+  font-size: 1.5em;
+  color: var(--li-color);
+  margin-bottom: 10px;
+}
+
+.valor p {
+  font-size: 1em;
+  color: var(--li-color);
 }
 
 
@@ -292,11 +464,12 @@ h3 span{
   line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
-  color: var(--li-color);
+  padding-top: 5rem;
+  color: var(--text-color);
 }
 .title-article h2{
   margin: 8rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.3;
   text-transform: uppercase;
@@ -305,6 +478,14 @@ h3 span{
   text-align: center;
   color: var(--text-color);
 }
+.article-container{
+  background-image: url('/Pro 1/assets/backgroundhead.png');
+  padding-bottom: 5rem;
+}
+.article-container img{
+  filter: blur(2px);
+}
+
 .container-carousel-article{
   display: grid;
   place-items: center;
@@ -442,17 +623,27 @@ h3 span{
   }
 }
 
+
+
 /* Faq */
+.faq-contact{
+  display: flex;
+  background-color: #283042;
+  justify-content: space-around; 
+  gap: 20px;
+  padding-top: 45px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .box-faq{
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 1rem;
   box-sizing: border-box;
-  border-radius: 20px;
 }
 #container-faq h1{
-  text-align: center;
+  text-align: left;
+  margin-top: 35px;
   padding-bottom: 20px;
 }
 #container-faq{
@@ -463,7 +654,7 @@ h3 span{
 }
 .accordion{
   background-color: #0f111a;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 12px;
   cursor: pointer;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -471,6 +662,7 @@ h3 span{
 .accordion-header{
   width: 100%;
   border: none;
+  border-radius: 10px;
   background-color: transparent;
   display: flex;
   align-items: center;
@@ -482,10 +674,10 @@ h3 span{
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
+  color: #edf0f1;
   text-overflow: ellipsis;
 }
 .accordion-body{
-  color: var(--text-color);
   font-size: 14px;
   opacity: 0;
   height: 0;
@@ -499,9 +691,11 @@ h3 span{
 }
 .arrow{
   transition: transform .2s linear;
+  color: #ffffff;
 }
 .accordion:has(.active) .arrow{
   transform: rotate(180deg);
+  
 }
 
 /* Contact */
@@ -526,7 +720,7 @@ form{
   width: 100%;
   max-width: 30rem;
   padding: 2rem;
-  border-radius: 1.5rem;
+  border-radius: 5px;
 }
 
 label,
@@ -534,6 +728,7 @@ input,
 textarea{
   display: block;
   width: 100%;
+  
 }
 
 input,
@@ -541,7 +736,8 @@ textarea,
 .button-contact{
   font: inherit;
   padding: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
+  
 }
 
 input,
@@ -550,7 +746,7 @@ textarea{
   color: white;
   background: #0f111a;
   border: 0.125rem solid transparent;
-  border-radius: 1.125rem;
+  border-radius: 10px;
   transition: border-color 0.3s;
   box-shadow: 0.3s;
 }
@@ -570,13 +766,13 @@ label{
 }
 
 textarea{
-  min-height: 12.5rem;
+  min-height: 5.5rem;
   resize: vertical;
 }
 
 .button-contact{
   border: none;
-  border-radius: 99px;
+  border-radius: 10px;
   color: white;
   cursor: pointer;
   transition: 0.3s;
@@ -605,13 +801,18 @@ textarea{
   color: tomato;
 }
 
-.faq-contact{
-  display: flex;
-  background-color: #283042;
-  justify-content: space-around; 
-  gap: 20px;
-  padding: 20px;
-  margin-top: 10rem;
+
+
+/* Map Box */
+.mapBox{
+  position: relative;
+  width: 100vw;
+  height: 100%;
+  background-color: #0f111a;
+}
+.mapBox iframe{
+  width: 100%;
+  height: 100%;
 }
 
 /* button whats */

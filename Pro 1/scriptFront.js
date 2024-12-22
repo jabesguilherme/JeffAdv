@@ -9,7 +9,7 @@ let nav = document.getElementById('nav');
             document.body.onscroll = () => { 
                 if (window.pageYOffset > 100) {
  
-                    nav.style.background = "#24252a80";
+                    nav.style.background = "#24252ae3";
  
                 } else {
                     nav.style.background = "transparent";
